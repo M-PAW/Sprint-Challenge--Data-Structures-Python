@@ -1,7 +1,7 @@
 import time
 
 start_time = time.time()
-
+# Adjusted file path to match my comp setup
 f = open('names/names_1.txt', 'r')
 names_1 = f.read().split("\n")  # List containing 10000 names
 f.close()
@@ -13,6 +13,7 @@ f.close()
 duplicates = []  # Return the list of duplicates in this data structure
 
 # Replace the nested for loops below with your improvements
+# O(n^c)
 # for name_1 in names_1:
 #     for name_2 in names_2:
 #         if name_1 in name_2:
